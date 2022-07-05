@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100&family=The+Nautigal:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    }
+    
+    body{
+    background: url(./assets/back\ img.jpg);
+    background-size: cover;
+    }
+    .container{
+    background: rgb(248, 246, 248);
+    opacity: 0.5;
+    font-size: larger;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-left: 35vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 60vw;
+    height: 150vh;
+    text-align: center;
+    }
+    #textBox1{
+    width: 20vw;
+    height: 15vh;
+    }
+    #textBox3{
+    width: 20vw;
+    height: 15vh;
+    }
+#TitleName{
+    color: red;
+    opacity: 0;
+    transform: translate(-155px,0) scale(0.4);
+    animation: animate .5s forwards;
+}
+#TitleName:nth-of-type(2){
+    animation-delay: 0.05s;
+}
+#TitleName:nth-of-type(3){
+    animation-delay: 0.1s;
+}
+#TitleName:nth-of-type(4){
+    animation-delay: 0.15s;
+}
+#TitleName:nth-of-type(5){
+    animation-delay: 0.2s;
+}
+#TitleName:nth-of-type(6){
+    animation-delay: 0.25s;
+}
+#TitleName:nth-of-type(7){
+    animation-delay: 0.3s;
+}
+#TitleName:nth-of-type(8){
+    animation-delay: 0.35s;
+}
+#TitleName:nth-of-type(9){
+    animation-delay: 0.4s;
+}
+#TitleName:nth-of-type(10){
+    animation-delay: 0.45s;
+}
+@keyframes animate{
+    40%{
+        transform: translate(50px, 0) scale(.7);
+        opacity: 1;
+        color: red;
+    }
+    60%{
+        color: blue;
+    }
+    80%{
+        transform: translate(0) scale(2);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0) scale(1);
+        opacity: 1;
+    }
+}
